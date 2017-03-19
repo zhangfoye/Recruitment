@@ -1,0 +1,970 @@
+<extend name="Base/base"/>
+<block name="main">
+	<script src="__PUBLIC__/js1/jquery.min.js"></script>
+        <!--end #header-->
+        <input type="hidden" id="serverTime" value="1488253525578" />
+        <!-- 页面主体START -->
+        <div class="container clearfix" id="container">
+            <div id="sidebar" class="sidebar" data-lg-tj-track-code="index_navigation"
+            data-lg-tj-track-type="1">
+                <div class="mainNavs">
+                    <div class="menu_box" id="js">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                技术
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="js_info" item="vo">
+                            <a href="__MODULE__/List/index/tag_name/{$vo.name}" data-lg-tj-id="4A00" data-lg-tj-no="0001"
+                            data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+							</foreach>
+                        </div>
+                        <div class="menu_sub dn" id="js_detail">
+						<foreach name="js_s" item="vo">
+                            <dl>
+                                <dt>
+                                    <a href="__MODULE__/List/index" data-lg-tj-id="4H00" data-lg-tj-no="0001"
+                                    data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.hd" item="v">
+                                    <a style='display:block;float:left;' href="__MODULE__/List/index" data-lg-tj-id="4O00" data-lg-tj-no="0101"
+                                    data-lg-tj-cid="idnull">
+                                        {$v.name}
+                                    </a>
+								</foreach>
+                                </dd>
+                            </dl>
+							</foreach>
+							
+                        </div>
+                    </div>
+					<script type="text/javascript">
+						
+							$("#js").mouseover(function(){
+								//$("#js_detail").css("display","block");
+								$("#js").toggleClass("menu_box");
+								$("#js").addClass("menu_box current");
+								$("#js_detail").toggleClass("menu_sub dn");
+								$("#js_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#js").mouseout(function(){
+								//$("#js_detail").css("display","none");
+								$("#js").toggleClass("menu_box current");
+								$("#js").addClass("menu_box");
+								$("#js_detail").toggleClass("menu_sub");
+								$("#js_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+                    <div class="menu_box" id="cp">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                产品
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="cp_info" item="vo">
+                            <a href="#" data-lg-tj-id="4B00"
+                            data-lg-tj-no="0001" data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+							</foreach>
+                        </div>
+						
+						
+                        <div class="menu_sub dn" id="cp_detail" style="position:absolute;top:130px;">
+                            <foreach name="cp_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4I00"
+                                    data-lg-tj-no="0001" data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.cp" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4P00"
+                                    data-lg-tj-no="0101" data-lg-tj-cid="idnull">
+                                        {$v.name}
+                                    </a>
+                                </foreach>   
+                                </dd>
+                            </dl>
+							</foreach>
+                            
+                        </div>
+                    </div>
+					
+					<script type="text/javascript">
+						
+							$("#cp").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#cp").toggleClass("menu_box");
+								$("#cp").addClass("menu_box current");
+								$("#cp_detail").toggleClass("menu_sub dn");
+								$("#cp_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#cp").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#cp").toggleClass("menu_box current");
+								$("#cp").addClass("menu_box");
+								$("#cp_detail").toggleClass("menu_sub");
+								$("#cp_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                    <div class="menu_box" id="sj">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                设计
+                                <!-- <i class="design">拉勾形象征集</i> -->
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="sj_info" item="vo">
+                            <a href="//www.lagou.com/zhaopin/UIshejishi/" data-lg-tj-id="4C00" data-lg-tj-no="0001"
+                            data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+                            </foreach>
+                        </div>
+                        <div class="menu_sub dn" id="sj_detail" style="position:absolute;top:200px;">
+                            <foreach name="sj_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4J00" data-lg-tj-no="0001"
+                                    data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.sj" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4Q00"
+                                    data-lg-tj-no="0101" data-lg-tj-cid="idnull" >
+                                        {$v.name}
+                                    </a>
+                                </foreach> 
+                                </dd>
+                            </dl>
+							</foreach>
+                       
+                        </div>
+                    </div>
+					
+					<script type="text/javascript">
+						
+							$("#sj").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#sj").toggleClass("menu_box");
+								$("#sj").addClass("menu_box current");
+								$("#sj_detail").toggleClass("menu_sub dn");
+								$("#sj_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#sj").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#sj").toggleClass("menu_box current");
+								$("#sj").addClass("menu_box");
+								$("#sj_detail").toggleClass("menu_sub");
+								$("#sj_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                    <div class="menu_box" id="yy">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                运营
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="yy_info" item="vo">
+                            <a href="#" data-lg-tj-id="4D00"
+                            data-lg-tj-no="0001" data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+                            </foreach>
+                        </div>
+                        <div class="menu_sub dn" id="yy_detail" style="position:absolute;top:330px;">
+                            <foreach name="yy_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4K00" data-lg-tj-no="0001"
+                                    data-lg-tj-cid="idnull">
+                                       {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.yy" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4R00"
+                                    data-lg-tj-no="0101" data-lg-tj-cid="idnull" >
+                                        {$v.name}
+                                    </a>
+                                </foreach>  
+                                </dd>
+                            </dl>
+							</foreach>
+                            
+                        </div>
+                    </div>
+					
+					<script type="text/javascript">
+						
+							$("#yy").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#yy").toggleClass("menu_box");
+								$("#yy").addClass("menu_box current");
+								$("#yy_detail").toggleClass("menu_sub dn");
+								$("#yy_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#yy").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#yy").toggleClass("menu_box current");
+								$("#yy").addClass("menu_box");
+								$("#yy_detail").toggleClass("menu_sub");
+								$("#yy_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                    <div class="menu_box" id="sc">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                市场与销售
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="sc_info" item="vo">
+                            <a href="#" data-lg-tj-id="4E00"
+                            data-lg-tj-no="0001" data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+                            </foreach>
+                        </div>
+                        <div class="menu_sub dn" id="sc_detail" style="position:absolute;top:330px;">
+                            <foreach name="sc_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4L00"
+                                    data-lg-tj-no="0001" data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.sc" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4S00"
+                                    data-lg-tj-no="0101" data-lg-tj-cid="idnull" >
+                                        {$v.name}
+                                    </a>
+                                </foreach>  
+                                </dd>
+                            </dl>
+							</foreach>
+                            
+                        </div>
+                    </div>
+					<script type="text/javascript">
+						
+							$("#sc").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#sc").toggleClass("menu_box");
+								$("#sc").addClass("menu_box current");
+								$("#sc_detail").toggleClass("menu_sub dn");
+								$("#sc_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#sc").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#sc").toggleClass("menu_box current");
+								$("#sc").addClass("menu_box");
+								$("#sc_detail").toggleClass("menu_sub");
+								$("#sc_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                    <div class="menu_box" id="zn">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                职能
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="zn_info" item="vo">
+                            <a href="#" data-lg-tj-id="4F00" data-lg-tj-no="0001"
+                            data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+                            </foreach>
+                        </div>
+                        <div class="menu_sub dn" id="zn_detail" style="position:absolute;top:550px;">
+                            <foreach name="zn_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4M00" data-lg-tj-no="0001"
+                                    data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.zn" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4T00" data-lg-tj-no="0101"
+                                    data-lg-tj-cid="idnull">
+                                        {$v.name}
+                                    </a>
+                                </foreach>   
+                                </dd>
+                            </dl>
+							</foreach>
+                            
+                        </div>
+                    </div>
+					<script type="text/javascript">
+						
+							$("#zn").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#zn").toggleClass("menu_box");
+								$("#zn").addClass("menu_box current");
+								$("#zn_detail").toggleClass("menu_sub dn");
+								$("#zn_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#zn").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#zn").toggleClass("menu_box current");
+								$("#zn").addClass("menu_box");
+								$("#zn_detail").toggleClass("menu_sub");
+								$("#zn_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                    <div class="menu_box" id="jr">
+                        <div class="menu_main job_hopping">
+                            <h2>
+                                金融
+                                <i class="fina">
+                                </i>
+                                <!-- 跳槽月 -->
+                                <span>
+                                </span>
+                            </h2>
+							<foreach name="jr_info" item="vo">
+                            <a href="#" data-lg-tj-id="4G00" data-lg-tj-no="0001"
+                            data-lg-tj-cid="idnull">
+                                {$vo.name}
+                            </a>
+                            </foreach>
+                        </div>
+                        <div class="menu_sub dn" id="jr_detail" style="position:absolute;top:680px;">
+                            <foreach name="jr_s" item="vo">
+							<dl>
+                                <dt>
+                                    <a href="#" data-lg-tj-id="4N00" data-lg-tj-no="0001"
+                                    data-lg-tj-cid="idnull">
+                                        {$vo.name}
+                                    </a>
+                                </dt>
+                                <dd>
+								<foreach name="vo.jr" item="v">
+                                    <a style='display:block;float:left;' href="#" data-lg-tj-id="4U00"
+                                    data-lg-tj-no="0101" data-lg-tj-cid="idnull" class="">
+                                        {$v.name}
+                                    </a>
+                                </foreach>    
+                                </dd>
+                            </dl>
+							</foreach>
+                            
+                        </div>
+                    </div>
+					<script type="text/javascript">
+						
+							$("#jr").mouseover(function(){
+								//$("#cp_detail").css("display","block");
+								$("#jr").toggleClass("menu_box");
+								$("#jr").addClass("menu_box current");
+								$("#jr_detail").toggleClass("menu_sub dn");
+								$("#jr_detail").addClass("menu_sub");
+						
+							});
+							
+							$("#jr").mouseout(function(){
+								//$("#cp_detail").css("display","none");
+								$("#jr").toggleClass("menu_box current");
+								$("#jr").addClass("menu_box");
+								$("#jr_detail").toggleClass("menu_sub");
+								$("#jr_detail").addClass("menu_sub dn");
+							});
+						
+					</script>
+					
+                </div>
+                <!-- <a class="subscribe" href="//www.lagou.com/s/subscribe.html" target="_blank">订阅职位</a> -->
+                <div class="subscribe">
+                    <a href="//www.lagou.com/s/subscribe.html" target="_blank" rel="nofollow"
+                    data-lg-tj-id="4g00" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        <span>
+                            订阅职位
+                        </span>
+                        <i id="n_rss" href="//www.lagou.com/s/subscribe.html" target="_blank"
+                        rel="nofollow">
+                            &nbsp;
+                        </i>
+                    </a>
+                </div>
+                <!-- <div class="suggestCity"><strong>全国站</strong><span id="changeCity_btn">[切换城市]</span></div> -->
+            </div>
+            <div class="content">
+                <div id="search_box" class="search_box" data-lg-tj-track-code="index_search"
+                data-lg-tj-track-type="1">
+                    <form id="searchForm" class="searchForm" name="searchForm" action="__CONTROLLER__/index" method="get">
+                        <input type="text" id="search_input" name="job" style="height:22px;" class="search_input" tabindex="1"
+                        maxlength="64" autocomplete="off" value="" placeholder="搜索职位" />
+                        
+                        <input type="submit" id="search_button" style="position:relative;top:-38px;" class="search_button" value="搜索"
+                        data-lg-tj-id="4V00" data-lg-tj-no="idnull" data-lg-tj-cid="idnull" />
+                    </form>
+                    <input type="hidden" id="search_py" value="" />
+                    <input type="hidden" id="isIndex" value="true" />
+                </div>
+                <div class="guess_wrapper dn">
+                    <span>
+                        猜你要搜
+                    </span>
+                    <ul>
+                    </ul>
+                </div>
+                <dl class="hotSearch" data-lg-tj-track-code="index_hotsearch" data-lg-tj-track-type="1">
+                </dl>
+                <div id="home_banner" class="home_banner" data-lg-tj-track-code="index_bannerad"
+                data-lg-tj-track-type="1">
+                    <ul class="banner_bg">
+                        <li class="banner_bg_1 current">
+                            <a class="tj_exposure" rel="nofollow" href="#"
+                            target="_blank" data-lg-tj-id="4k00" data-lg-tj-no="0001" data-lg-tj-cid="3198">
+                                <img id="mid" src="__PUBLIC__/picture/cgp3o1idt5kam5zsaahcv4ia9rc123.png" width="612" height="160"
+                                alt="全民升职季正式" />
+                            </a>
+                        </li>
+                        <!-- <li class="banner_bg_2"> -->
+                            <!-- <a class="tj_exposure" rel="nofollow" href="#" -->
+                            <!-- target="_blank" data-lg-tj-id="4k00" data-lg-tj-no="0002" data-lg-tj-cid="3233"> -->
+                                <!-- <img src="__PUBLIC__/picture/cgqkkviwfoeafi-faaop1z295y8754.jpg" width="612" height="160" -->
+                                <!-- alt="五星电器" /> -->
+                            <!-- </a> -->
+                        <!-- </li> -->
+                        <!-- <li class="banner_bg_3"> -->
+                            <!-- <a class="tj_exposure" rel="nofollow" href="#" -->
+                            <!-- target="_blank" data-lg-tj-id="4k00" data-lg-tj-no="0003" data-lg-tj-cid="3220"> -->
+                                <!-- <img src="__PUBLIC__/picture/cgqkkvi0a0saimu6aagkjqtm72o527.jpg" width="612" height="160" -->
+                                <!-- alt="创新互联网科技公司" /> -->
+                            <!-- </a> -->
+                        <!-- </li> -->
+                    </ul>
+                    <div class="banner_control">
+                        
+                        <ul class="thumbs" id="list">
+                            <li class="thumbs_2 current">
+                                <i>
+                                </i>
+                                <img id="mid1" style="border:2px solid gray;" src="__PUBLIC__/picture/cgp3o1idt5kam5zsaahcv4ia9rc123.png" width="113" height="42"
+                                />
+                            </li>
+                            <li class="thumbs_2">
+                                <i>
+                                </i>
+                                <img id="mid2" style="border:2px solid gray;" src="__PUBLIC__/picture/cgqkkviwfoeafi-faaop1z295y8754.jpg" width="113" height="42"
+                                />
+                            </li>
+                            <li class="thumbs_2">
+                                <i>
+                                </i>
+                                <img id="mid3" style="border:2px solid gray;" src="__PUBLIC__/picture/cgqkkvi0a0saimu6aagkjqtm72o527.jpg" width="113" height="42"
+                                />
+                            </li>
+                        </ul>
+						
+                    </div>
+					<script type="text/javascript">
+					
+						//获取标签节点
+						var mid = document.getElementById("mid");
+						var list = document.getElementById("list").getElementsByTagName("img");
+						//遍历
+						for(var i=0;i<list.length;i++){
+						   list[i].onmouseover = function(){
+								mid.src = this.src;
+							   }
+						   }
+						
+						</script>
+                </div>
+	           
+                <ul class="job_tab" id="jobTab">
+                    <li class="current hotTab" data-lg-tj-id="4X00" data-lg-tj-no="idnull"
+                    data-lg-tj-cid="idnull">
+                        热门职位
+                    </li>
+                    <li class="newTab" data-lg-tj-id="gD00" data-lg-tj-no="idnull" data-lg-tj-cid="idnull">
+                        最新职位
+                    </li>
+                </ul>
+                <div class="job_list clearfix" id="jobList">
+                    <div class="hot_posHotPosition position_list init_joblist" data-lg-tj-track-code="index_hotjob"
+                    data-lg-tj-track-type="1">
+                        <ul class="clearfix">
+						<foreach name="position_info" item="vo">
+                            <li class="position_list_item default_list" data-jobId="2168236" data-positionid="2168236"
+                            data-salary="10k-20k" data-company="广东亿迅" data-positionname="JAVA" data-companyid="62627">
+                                <div class="pli_top">
+                                    <div class="fl pli_top_l">
+                                        <div class="position_name">
+                                            <h2 class="fl">
+                                                <a href="__MODULE__/PersonCenter/position_detail/uid/{$vo.id}" target="_blank" class="position_link fl wordCut"
+                                                data-index="0" data-lg-tj-id="rx00" data-lg-tj-no="0001" data-lg-tj-cid="2168236">
+                                                    {$vo.name}
+                                                    <span>
+                                                        [{$vo.city}]
+                                                    </span>
+                                                </a>
+                                            </h2>
+                                            <!-- 此处需要和后台确认 -->
+                                            <span class="fl">
+                                                {$vo.addtime|date="Y-m-d",###}
+                                            </span>
+                                            <input type="hidden" class='hr_portrait' value='i/image/M00/99/A2/Cgp3O1ihD0KAULlHAAAXVeZ02xA831.jpg'>
+                                            <input type="hidden" class='hr_name' value='尚小姐'>
+                                            <input type="hidden" class='hr_position' value='招聘主管'>
+                                            <input type="hidden" class='erma_codeu' value='1781090'>
+                                            <input type="hidden" class='erma_codep' value='2168236'>
+                                            <div class="chat_me" data-lg-tj-id="1WD0" data-lg-tj-no="0001" data-lg-tj-cid="2168236"
+                                            data-lg-tj-track-code="index_code" data-lg-tj-track-type="1">
+                                            </div>
+                                        </div>
+                                        <div class="position_main_info">
+                                            <span class="salary fl">
+                                                {$vo.left}K-{$vo.right}K
+                                            </span>
+                                            <span>
+                                                <!-- <i class="experience"></i>&nbsp;  -->
+												{$vo.fexpe}
+                                            </span>
+                                            /
+                                            <span>
+                                                {$vo.fdegree}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fr pli_top_r">
+                                        <div class="company_name wordCut">
+                                            <a href="#" target="_blank" data-lg-tj-id="vz00"
+                                            data-lg-tj-no="0001" data-lg-tj-cid="62627">
+                                               {$vo.comname}
+                                            </a>
+                                        </div>
+                                        <div class="industry wordCut">
+											
+                                        </div>
+										<div class="industry wordCut" style="position:absolute;bottom:0px;">
+                                           
+                                            {$vo.advantage}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pli_btm">
+                                    <div class="pli_btm_l fl">
+                                        <span class="wordCut" style="position:absolute;bottom:0px;">
+                                            {$vo.name}
+                                        </span>
+                                        
+                                    </div>
+                                    <div class="pli_btm_r fl wordCut">
+                                        {$vo.introduce}
+                                    </div>
+                                </div>
+                            </li>
+                        </foreach>    
+                        </ul>
+                        <a href="#" class="list_more fr" target="_blank"
+                        data-lg-tj-id="4s00" data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-tj-track-code="index_checkmore"
+                        data-lg-tj-track-type="1">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div id="linkbox" class="linkbox show-linkbox">
+                    <dl>
+                        <dt>
+                            友情链接
+                        </dt>
+                        <dd>
+                            <a href="http://www.lagou.com/" target="_blank">
+                                拉勾网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://pro.lagou.com" target="_blank">
+                                大鲲
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.lagou.com" target="_blank">
+                                招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.liqucn.com/" target="_blank">
+                                app下载
+                            </a>
+                            <a href="http://www.wangxiao.cn" target="_blank">
+                                中大网校
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.woshipm.com/" target="_blank">
+                                人人都是产品经理
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.job910.com/" target="_blank">
+                                教师招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.xjhr.com/" target="_blank">
+                                新疆人才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.chinairn.com/" target="_blank">
+                                研究报告
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.yixieshi.com/" target="_blank">
+                                互联网的一些事
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.cnrencai.com/" target="_blank">
+                                人才招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.lagou.com/" target="_blank">
+                                找工作
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://tool.liuxue86.com/" target="_blank">
+                                字典
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://kaoshi.yjbys.com/" target="_blank">
+                                中国考试网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://baike.1688.com/" target="_blank">
+                                生意经商业百科
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://dzh.mop.com/" target="_blank">
+                                猫扑大杂烩
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://tuku.jia.com" target="_blank">
+                                装修效果图
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.lagou.com/" target="_blank">
+                                招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.examw.com/" target="_blank">
+                                中华考试网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.58pic.com/tupian/zhaopinsucai.html" target="_blank">
+                                招聘素材
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.lagou.com/hangzhou/" target="_blank">
+                                杭州招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.lagou.com/shanghai/" target="_blank">
+                                上海招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://china.findlaw.cn/" target="_blank">
+                                法律咨询
+                            </a>
+                            <a href="http://www.24en.com" target="_blank">
+                                爱思英语网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.xuzhoujob.com/" target="_blank">
+                                徐州英才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.thinkphp.cn/" target="_blank">
+                                thinkphp
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.kuakao.com/" target="_blank">
+                                考研网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.yinhangzhaopin.com/" target="_blank">
+                                银行招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.yuwenmi.com/" target="_blank">
+                                语文学习网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://jobs.zhaopin.com/" target="_blank">
+                                智联招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.job592.com/" target="_blank">
+                                职业圈
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://finance.gucheng.com/" target="_blank">
+                                股城财经
+                            </a>
+                            <a href="http://www.64365.com" target="_blank">
+                                法律咨询网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.jianzhi8.com/" target="_blank">
+                                兼职吧
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.pincai.com/" target="_blank">
+                                招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://ishare.iask.sina.com.cn/" target="_blank">
+                                爱问共享资料
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.xbaixing.com/" target="_blank">
+                                百姓网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.liepin.com/" target="_blank">
+                                招聘
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.kuaiji.com/" target="_blank">
+                                会计网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://jianli.zhaopin.com/" target="_blank">
+                                简历模版
+                            </a>
+                            <a href="http://www.cfw.cn/" target="_blank">
+                                服装人才网
+                            </a>
+                            <a href="http://www.zbj.com/" target="_blank">
+                                创意服务外包
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.xilu.com" target="_blank">
+                                西陆军事
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.eoffcn.com" target="_blank">
+                                中公公务员网校
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.laoren.com" target="_blank">
+                                老人网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.cjol.com/" target="_blank">
+                                找工作
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.job5156.com/" target="_blank">
+                                招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.qianzhan.com" target="_blank">
+                                前瞻网
+                            </a>
+                            <a href="http://www.goodjobs.cn" target="_blank">
+                                安徽招聘网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.tzrl.com" target="_blank">
+                                台州人才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.job256.com" target="_blank">
+                                苏州人才网&nbsp;
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.zgjsks.com" target="_blank">
+                                教师网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.huibo.com" target="_blank">
+                                重庆人才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.canet.com.cn/" target="_blank">
+                                中国会计网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.qlrc.com/" target="_blank">
+                                齐鲁人才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.youbian.com/" target="_blank">
+                                邮编生活网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.91job.com" target="_blank">
+                                义乌人才网
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="http://www.php100.com/" target="_blank">
+                                PHP100中文网
+                            </a>
+                            <a href="http://www.pxto.com.cn" target="_blank">
+                                培训网
+                            </a>
+                            <a href="//www.lagou.com/af/flink.html" target="_blank" class="more" rel="nofollow">
+                                更多
+                            </a>
+                        </dd>
+                    </dl>
+                    <a rel="nofollow" href="javascript:;" class="expansion">
+                        展开
+                        <i>
+                        </i>
+                    </a>
+                </div>
+                <!-- <link rel="import" href="../../modules/chat-pop/main.html?__inline"> -->
+            </div>
+        </div>
+        <!-- 页面主体END -->
+        <!-- footer <-->
+        </block>

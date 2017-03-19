@@ -47,8 +47,8 @@
 
 <!-- 页面样式 --><!-- 动态token，防御伪造请求，重复提交 -->
 <script type="text/javascript">
-    window.X_Anti_Forge_Token = 'ca4b7131-cf93-454a-bf14-2643dab659d3';
-    window.X_Anti_Forge_Code = '56019949';
+    window.X_Anti_Forge_Token = '6fd3d55b-92f4-4c95-a781-6718e0340cfa';
+    window.X_Anti_Forge_Code = '62616657';
 </script>
 
 <!-- H5	 -->
@@ -117,7 +117,7 @@
 </footer>
 <!-- 页面主体END --><!-- jquery lib -->
 <!--拉勾UI框架 -->
-<!-- analytics js file --><!-- plat analytics js file --><input type="hidden" id="serverTime" value="1488334261620" />
+<!-- analytics js file --><!-- plat analytics js file --><input type="hidden" id="serverTime" value="1488549137286" />
 
 <script type="text/javascript" src="//img.lagou.com/passport/static/pkg/vendor_c7a7c93.js"></script>
 <script type="text/javascript" src="//img.lagou.com/passport/static/pkg/pc/page/login/main.html_aio_05b2501.js"></script>

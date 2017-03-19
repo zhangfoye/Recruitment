@@ -1,0 +1,1188 @@
+<extend name="Base/base"/>
+<block name="style">
+<script src="__PUBLIC__/js1/jquery-1.8.2.min.js"></script>
+<script src="__PUBLIC__/js1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__PUBLIC__/js1/bootstrap.min.js"></script>
+
+<link rel="Shortcut Icon" href="//www.lgstatic.com/www/static/common/static/favicon_faed927.ico">
+<link rel="stylesheet" href="__PUBLIC__/jq/css/common.css"/>
+
+<!-- Bootstrap -->
+<link href="__PUBLIC__/css1/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="__PUBLIC__/css1/offcanvas.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main_071aa82.css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.html_aio_1188cfe.css" />
+<!--上传头像-->
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link href="__PUBLIC__/cropper/cropper.min.css" rel="stylesheet">
+        <link href="__PUBLIC__/sitelogo/sitelogo.css" rel="stylesheet">
+        <script src="__PUBLIC__/cropper/cropper.min.js"></script>
+        <script src="__PUBLIC__/sitelogo/sitelogo.js"></script>
+        <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+<!-- 隐藏表单 -->
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<!--弹出框-->
+<script type="text/javascript">
+var w,h,className;
+function getSrceenWH(){
+	w = $(window).width();
+	h = $(window).height();
+	$('#dialogBg').width(w).height(h);
+}
+
+window.onresize = function(){  
+	getSrceenWH();
+}  
+$(window).resize();  
+
+$(function(){
+	getSrceenWH();
+	
+	//显示弹框
+	$('.box a').click(function(){
+		className = $(this).attr('class');
+		$('#dialogBg').fadeIn(300);
+		$('#dialog').removeAttr('class').addClass('animated '+className+'').fadeIn();
+	});
+	
+	//关闭弹窗
+	$('.claseDialogBtn').click(function(){
+		$('#dialogBg').fadeOut(300,function(){
+			$('#dialog').addClass('bounceOutUp').fadeOut();
+		});
+	});
+});
+</script>
+</block>
+
+<block name="main">
+    <div class="container clearfix" id="container">
+        <div>
+            <input type="hidden" id="isShowDefault" value="1" />
+            <div class="clearfixs mr_created">
+                <div class="mr_myresume_l">
+                    <div class="switch_resume">
+                        <span class="find_me">
+                            让好职位主动来找我
+                        </span>
+                        <div class="openresume">
+                            <div class="toggle toggle-off">
+                                <label class="toggle-radio" for="toggleOption2">
+                                    <i class="checked">
+                                    </i>
+                                </label>
+                                <input type="radio" name="toggleOptions" id="toggleOption2" value="option2"
+                                checked="checked" data-lg-tj-id="7100" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"
+                                data-lg-gatj-method="send" data-lg-gatj-msgtype="event" data-lg-gatj-msg="plus,开启,radio">
+                                <label class="toggle-radio" for="toggleOption1">
+                                    <i class="uncheck">
+                                    </i>
+                                </label>
+                                <input type="radio" name="toggleOptions" id="toggleOption1" value="option1"
+                                data-lg-tj-id="7200" data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-gatj-method="send"
+                                data-lg-gatj-msgtype="event" data-lg-gatj-msg="plus,关闭,radio">
+                            </div>
+                        </div>
+                        <div class="openresume_tip unopen">
+                            <span class="triangle_border tb_border">
+                            </span>
+                            <span class="triangle_border tb_background">
+                            </span>
+                            <i>
+                            </i>
+                            <p>
+                                完善基本信息，机会即刻找上门
+                            </p>
+                            <a href="//www.lagou.com/resume/threestep.html" data-lg-tj-id="7300" data-lg-tj-no="idnull"
+                            data-lg-tj-cid="idnull" data-lg-gatj-msg="resume,完善,button">
+                                去完善
+                            </a>
+                        </div>
+                        <div class="openresume_tip succ-fail">
+                            <span class="triangle_border tb_border">
+                            </span>
+                            <span class="triangle_border tb_background">
+                            </span>
+                            <p>
+                                已开启机会+
+                            </p>
+                        </div>
+                        <div class="openresume_tip firstset">
+                            <a href="javascript:;" data-lg-tj-id="7400" data-lg-tj-no="idnull" data-lg-tj-cid="idnull"
+                            data-lg-gatj-method="send" data-lg-gatj-msgtype="event" data-lg-gatj-msg="plus,开启,button">
+                                去开启
+                            </a>
+                            <span class="triangle_border tb_border">
+                            </span>
+                            <span class="triangle_border tb_background">
+                            </span>
+                            <i>
+                            </i>
+                            <p>
+                                匿名秀出自己，让好老板来抢优秀的你
+                            </p>
+                        </div>
+                    </div>
+                        <div id="mr_mr_head">
+                        <form action="__URL__/uploadimg" method="post" enctype="multipart/form-data">
+                            
+                            <div class="mr_top_bg" id="baseinfo">
+                                <img id="userpic" name="head_img_name" src="__PUBLIC__/Upload/head_img/s_{$info.head_img_name}" alt="默认头像" width="120"
+                                height="120" alt="头像" class="mr_headimg" />
+                                <img src="__PUBLIC__/picture/tou_42952f6.png" height="170" width="702" class="opa"
+                                />
+                                <img src="__PUBLIC__/picture/shadow_tx_a482008.png" height="119" width="119" class="shadow"
+                                />
+                                <input type="file" class="mr_headfile" id="up_txpic" name="headPic" onchange="myresumeCommon.utils.imageUpload(this,myresumeCommon.requestTargets.photoUpload,uploadPhoto.upSucc,uploadPhoto.upFail);"
+                                title="支持jpg、jpeg、gif、png格式，文件小于10M" />
+                                <input type="hidden" name="id" value="{$info.id}"/>
+                            </div>
+                            <input type="submit" value="上传"/ style="z-index:3;position:relative;left:370px;">
+                        </form>
+                        <div class="mr_baseinfo">
+                            <i class="mr_left_bg">
+                            </i>
+                            <i class="mr_right_bg">
+                            </i>
+                            <div class="mr_my_qr">
+                                <div class="dropdown_menu">
+                                    <!--广告位-->
+                                    <div key="WODEJIANLI_ERWEIMA" class="lgad_jsonp">
+                                    </div>
+                                </div>
+                            </div>
+
+            <form  style="display:none;" name="personal_form" id="personal_form" method="post" onsubmit="return per_doEdit()">
+                <input type="hidden" name="id" value="{$info.id}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">姓名</label>
+                    <input type="text" class="form-control"  placeholder="姓名" name="nickname" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">一句话描述自己</label>
+                    <input type="text" class="form-control"  placeholder="一句话描述自己" name="self_description" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">毕业学校</label>
+                    <input type="text" class="form-control"  placeholder="毕业学校" name="grad_college" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">学历</label>
+                    <input type="text" class="form-control"  placeholder="学历" name="grad_degree" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">专业</label>
+                    <input type="text" class="form-control"  placeholder="专业" name="major" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">个人邮箱</label>
+                    <input type="text" class="form-control"  placeholder="个人邮箱" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">联系电话</label>
+                    <input type="text" class="form-control"  placeholder="联系电话" name="phone">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleInputFile">公司Logo</label>
+                    <input type="file" id="exampleInputFile">   
+                </div> --><br>
+                
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <button type="button" class="btn btn-default" onclick="per_cancel()">取消</button>
+        </form> 
+                           
+            <div id="per_div">
+                <center>
+                    <span class="mr_name" title="昵称" id="nickname" style="position:relative;top:-10px;">{$info.nickname}</span>
+                    <ul class="list-group" style="color:#666666;">
+                        <li class="list-group-item" title="一句话描述自己" style="line-height:30px;" id="self_description">{$info.self_description}</li>
+
+                        <li class="list-group-item" title="毕业院校" style="line-height:30px;" id="grad_college">{$info.grad_college}
+                        </li>
+
+                        <li class="list-group-item"  style="line-height:30px;">
+                        <span class="glyphicon glyphicon-star"aria-hidden="true" id="grad_degree" title="学历">{$info.grad_degree}</span>|<span id="major" title="专业">{$info.major}</span></li>
+
+                        <li class="list-group-item"  style="line-height:30px;">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true" id="email" title="个人邮箱">{$info.email}&nbsp;</span>
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true" id="phone" title="联系电话">{$info.phone}</span>
+                        </li>
+
+                        <li class="list-group-item" style="line-height:50px;">
+                        <span>
+                            <a href="javascript:;" onclick="per_edit({$info.id})" style="color:#00B38A;font-size:16px;">编辑个人信息</a> 
+                        </span>
+                        </li>
+                    </ul>
+                </center>  
+            </div>
+
+            <script type="text/javascript">
+                function per_edit(id){
+                    
+                $("#personal_form").css("display","block");
+                $("#per_div").css("display","none");
+                $.ajax({
+                    type:"POST",
+                    url:"__URL__/edit",
+                    data:"id="+id,
+                    dataType:"json",
+                    async:true,
+                    success:function(res){
+                        var data = res.data;
+                        $("input[name='nickname']").val(data.nickname);
+                        $("input[name='self_description']").val(data.self_description);
+                        $("input[name='grad_college']").val(data.grad_college);
+                        $("input[name='major']").val(data.major);
+                        $("input[name='grad_degree']").val(data.grad_degree);
+                        $("input[name='email']").val(data.email);
+                        $("input[name='phone']").val(data.phone);
+                }
+                });
+                    
+                }
+
+        function per_doEdit(){
+
+            $.ajax({
+                type:"POST",
+                url:"__URL__/update",
+                data:$("#personal_form").serialize(),
+                dataType:"json",
+                async:true,
+                success:function(res){
+                    var info = res.data;
+                    if(res.info=="Y"){
+                        $("#personal_form").css("display","none");
+                        $("#per_div").css("display","block");
+                        $("#nickname").html(info.nickname);
+                        $("#self_description").html(info.self_description);
+                        $("#grad_college").html(info.grad_college);
+                        $("#grad_degree").html(info.grad_degree);
+                        $("#major").html(info.major);
+                        $("#email").html(info.email);
+                        $("#phone").html(info.phone);
+                        
+                    }
+
+                }
+            });
+            return false;
+        }
+
+                function per_cancel(){
+                    $("#personal_form").css("display","none");
+                    $("#per_div").css("display","block");
+                    //清空form表单的值
+                    $(":input[type='text']","#personal_form").val('');
+                }
+
+        </script>  
+        </div>
+    </div>
+                    <div class="mr_content">
+                        <div id="workExperience" class="item_container_target">
+                            <div class="mr_moudle_head clearfixs mr_w604">
+                                <div class="mr_head_l">
+                                    <div class="mr_title">
+                                        <span class="mr_title_l">
+                                        </span>
+                                        <span class="mr_title_c">
+                                            实习经历
+                                        </span>
+                                        <span class="mr_title_r">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="mr_head_r">
+                                <i>
+                                </i>
+                                <em><a  onclick="edit({$info.id})" 
+                                style="color:#00B38A;border:0px;background-color:#FCFCFC;">编辑</a>
+                                </em>
+                                </div>
+                            </div>
+
+        <form  style="display:none;" name="sx_form" id="myform" method="post" onsubmit="return doEdit()">
+                <input type="hidden" name="id" value="{$info.id}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">公司名称</label>
+                    <input type="text" class="form-control"  placeholder="公司名称" name="firm_name" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">职位</label>
+                    <input type="text" class="form-control"  placeholder="职位" name="position" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">工作内容</label>
+                    <input type="text" class="form-control"  placeholder="工作内容" name="work_contents" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">实习时间</label>
+                    <input type="text" class="form-control"  placeholder="--到--" name="on_job_time_start">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleInputFile">公司Logo</label>
+                    <input type="file" id="exampleInputFile">   
+                </div> --><br>
+                
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <button type="button" class="btn btn-default" onclick="cancel()">取消</button>
+        </form>   
+        
+        <div class="mr_moudle_content mr_w604">
+                <div class="mr_empty_add" id="sx_div">
+
+                <ul class="list-group" style="color:#666666;text-align:left;">
+                    <li class="list-group-item" title="公司名称" style="line-height:25px;" id="firm_name">&nbsp;&nbsp;<b>实习公司：</b>{$info.firm_name}</li>
+                    <li id="position" class="list-group-item" title="职位" style="line-height:20px;">&nbsp;&nbsp;<b>担任职位：</b>{$info.position}</li>
+                    <li id="on_job_time_start" class="list-group-item" title="实习时间" style="line-height:20px;">
+                    &nbsp;&nbsp;<b>实习时间：</b>{$info.on_job_time_start}{$info.on_job_time_stop}</li>
+                    <li id="work_contents" class="list-group-item" title="实习内容" style="line-height:20px;">
+                    &nbsp;&nbsp;<b>实习内容：</b>{$info.work_contents}
+                    </li>
+                </ul>
+                    <!-- <i>
+                    </i>
+                    <em><button data-toggle="modal" data-target="#myModal" style="color:#00B38A;background-color:#FCFCFC;border:0px;font-size:16px;">添加实习经历</button></em> -->
+                </div>
+
+            <script type="text/javascript">
+                function edit(id){
+                    
+                $("#myform").css("display","block");
+                $("#sx_div").css("display","none");
+                $.ajax({
+                    type:"POST",
+                    url:"__URL__/edit",
+                    data:"id="+id,
+                    dataType:"json",
+                    async:true,
+                    success:function(res){
+                        var data = res.data;
+                        $("input[name='firm_name']").val(data.firm_name);
+                        $("input[name='position']").val(data.position);
+                        $("input[name='work_contents']").val(data.work_contents);
+                        $("input[name='on_job_time_start']").val(data.on_job_time_start);
+                }
+                });
+                    
+                }
+
+        function doEdit(){
+
+            $.ajax({
+                type:"POST",
+                url:"__URL__/update",
+                data:$("#myform").serialize(),
+                dataType:"json",
+                async:true,
+                success:function(res){
+                    var info = res.data;
+                    if(res.info=="Y"){
+                        $("#myform").css("display","none");
+                        $("#sx_div").css("display","block");
+                        $("#firm_name").html(info.firm_name);
+                        $("#position").html(info.position);
+                        $("#on_job_time_start").html(info.on_job_time_start);
+                        $("#work_contents").html(info.work_contents);
+                        
+                    }
+
+                }
+            });
+            return false;
+        }
+
+                function cancel(){
+                    $("#myform").css("display","none");
+                    $("#sx_div").css("display","block");
+                    //清空form表单的值
+                    $(":input[type='text']","#myform").val('');
+                }
+
+
+        </script>  
+        
+        <!-- 模态框 -->
+        <center>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <script type=" text/JavaScript">
+                    //执行添加
+                        // function doSubmit()
+                        // {
+                        //     //获取表单对象
+                        //     var form = $("#myform");
+                        //     $.ajax({
+                                
+                        //         type:"POST",
+                        //         url:"__URL__/insert",
+                        //         data:form.serialize(),
+                        //         dataType:"json",
+                        //         async:true,
+                        //         success:function(res){
+                        //             if(res.info=="Y"){
+                        //                 alert(1235);
+                        //         var data = res.data;//获取添加成功的数据
+                              
+                        //         var str = "<tr"+data.id+">";
+                        //         str += "<td>"+data.id+"</td>";
+                        //         str += "<td>"+data.name+"</td>";
+                        //         str += "<td>"+data.sex+"</td>";
+                        //         str += "<td>"+data.age+"</td>";
+                        //         str += "<td>"+data.classid+"</td>";
+                        //         str +="</tr>";
+                        //         $(str).appendTo("#tid tbody"); 
+                        //         form[0].reset();
+                        //             alert("添加成功！");
+                        //         }else{
+                        //             alert("添加失败！");
+                        //         }
+
+                        //         },
+                        //     });
+                        // return false;
+                        // }
+
+                        //获取编辑的内容
+                        // function edit(id){
+                        //     $.ajax({
+                        //         type:"GET",
+                        //         url:"__URL__/edit",
+                        //         data:"id="+id,
+                        //         dataType:"json",
+                        //         async:true,
+                        //         success:function(res){
+                        //             $("").val(res.name);
+                        //             $("input[name='id']").val(res.id);
+                        //             $("#url").val(res.url);
+                        //         },
+                        //     });
+
+                        // }
+                        //执行更改
+                        // function doEdit(){
+                        //     $.ajax({
+                        //         type:"POST",
+                        //         url:"__URL__/update",
+                        //         data:$("").serialize,
+                        //         dataType:"json",
+                        //         success:function(res){
+                        //             if(res){
+                        //                 $().children().eq(1).html(res.name);
+                        //                 $().children().eq(2).html(res.url);
+                        //             }else{
+                        //                 Modal.alert({,msg:'修改失败！',title:'更新信息操作',});
+                        //             }
+                        //         },
+                        //     });
+                        // }
+
+
+                </script>
+            
+            </div>
+        </div>
+        </div>
+        </center>
+            </div>
+                </div>
+                    <div id="educationalBackground" class="item_container_target">
+                        <div class="mr_moudle_head clearfixs mr_w604">
+                            <div class="mr_head_l">
+                                <div class="mr_title">
+                                        <span class="mr_title_l">
+                                        </span>
+                                        <span class="mr_title_c">
+                                            教育经历
+                                        </span>
+                                        <span class="mr_title_r">
+                                        </span>
+                                </div>
+                            </div>
+                            <!-- <div class="mr_head_r">
+                                <i>
+                                </i>
+                                <em>
+                                添加
+                                </em>
+                            </div> -->
+                        </div>
+                            <div class="mr_moudle_content mr_w604">
+                                
+                                <div class="list_show" id="jy_div">
+                                    <div class="clearfixs mb46 mr_jobe_list">
+                                        <div class="mr_content_l">
+                                            <div class="l1">
+                                                <img src="__PUBLIC__/picture/cgqkkvi1e3wahfplaaam55hcsue78.jpeg" alt="学校Logo" />
+                                            </div>
+                                            <div class="l2">
+                                                <h4 id="grad_college">
+                                                   {$info.grad_college}
+                                                </h4>
+                                                <span id="grad_degree">
+                                                    {$info.grad_degree} · {$info.major}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mr_content_r">
+                                            <div class="mr_edit mr_c_r_t" data-eduid="5125785" data-schoolname="{$info.grad_college}"
+                                            data-edu="{$info.grad_degree}" data-pro="{$info.major}" data-date="grad_time">
+                                    <i>
+                                    </i>
+                                    <em><a  onclick="jy_edit({$info.id})" 
+                                    style="color:#00B38A;border:0px;background-color:#FCFCFC;">编辑</a>
+                                    </em>
+                                            </div>
+                                            <span id="grad_time">
+                                                {$info.grad_time}年毕业
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+            <!--教育经历-->
+            <form  style="display:none;" name="jy_form" id="jy_myform" method="post" onsubmit="return jy_doEdit()">
+                <input type="hidden" name="id" value="{$info.id}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">学校名称</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="学校名称"name="grad_college" value="{$info.grad_college}">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">所学专业</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="所学专业" name="major" value="{$info.major}">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">学历</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="学历" name="grad_degree" value="{$info.grad_degree}">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">毕业时间</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="毕业时间" name="grad_time" value="{$info.grad_time}">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleInputFile">公司Logo</label>
+                    <input type="file" id="exampleInputFile">   
+                </div> --><br>
+                
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <button type="button" class="btn btn-default" onclick="jy_cancel()">取消</button>
+            </form>
+                <script type="text/javascript">
+                function jy_edit(id){
+                    
+                $("#jy_myform").css("display","block");
+                $("#jy_div").css("display","none");
+                $.ajax({
+                    type:"POST",
+                    url:"__URL__/edit",
+                    data:"id="+id,
+                    dataType:"json",
+                    async:true,
+                    success:function(res){
+                        var data = res.data;
+                        $("input[name='grad_college']").val(data.grad_college);
+                        $("input[name='major']").val(data.major);
+                        $("input[name='grad_degree']").val(data.grad_degree);
+                        $("input[name='grad_time']").val(data.grad_time);
+                }
+                });
+                    
+                }
+
+                function jy_doEdit(){
+
+                    $.ajax({
+                        type:"POST",
+                        url:"__URL__/update",
+                        data:$("#jy_myform").serialize(),
+                        dataType:"json",
+                        async:true,
+                        success:function(res){
+                            var info = res.data;
+                            if(res.info=="Y"){
+                                $("#jy_myform").css("display","none");
+                                $("#jy_div").css("display","block");
+                                $("#grad_college").html(info.grad_college);
+                                $("#grad_degree").html(info.grad_degree);
+                                $("#grad_time").html(info.grad_time);
+                                
+                            }
+
+                        }
+                    });
+                    return false;
+                }
+                
+                function jy_cancel(){
+                    $("#jy_myform").css("display","none");
+                    $("#jy_div").css("display","block");
+                    //清空form表单的值
+                    $(":input[type='text']","#jy_myform").val('');
+                }
+
+
+        </script>              
+
+                </div>
+
+            <!--期望工作-->
+            <div>
+                <div class="mr_moudle_head clearfixs mr_w604">
+                    <div class="mr_head_l">
+                        <div class="mr_title">
+                            <span class="mr_title_l">
+                            </span>
+                            <span class="mr_title_c">
+                                期望工作
+                            </span>
+                            <span class="mr_title_r">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mr_head_r" data-city="">
+                        <i>
+                        </i>
+                        <em><a  onclick="expJob_edit({$info.id})" 
+                        style="color:#00B38A;border:0px;background-color:#FCFCFC;">编辑</a>
+                        </em>
+                    </div>
+                </div>
+
+            <!--期望工作隐藏表单-->
+            <form style="display:none;" name="expJob_myform" id="expJob_myform" method="post" onsubmit="return expJob_doEdit()">
+                <input type="hidden" name="id" value="{$info.id}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">期望职位</label>
+                    <input type="text" class="form-control" placeholder="期望职位"name="expected_position">
+            
+                    <select class="form-control" name="position_type">
+                      <option>全职</option>
+                      <option>兼职</option>
+                      <option>实习</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">期望城市</label>
+                    <select class="form-control" name="expected_city">
+                      <option>北京</option>
+                      <option>上海</option>
+                      <option>天津</option>
+                      <option>广州</option>
+                      <option>太原</option>
+                      <option>长治</option>
+                      <option>大同</option>
+                      <option>忻州</option>
+                      <option>吕梁</option>
+                      <option>晋中</option>
+                      <option>运城</option>
+                      <option>临汾</option>
+                      <option>朔州</option>
+                      <option>阳泉</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">期望薪资</label>
+                    <select class="form-control" name="expected_salary">
+                      <option>2k以下</option>
+                      <option>2k-5k</option>
+                      <option>5k-10k</option>
+                      <option>10k-15k</option>
+                      <option>15k-25k</option>
+                      <option>25k-50k</option>
+                      <option>50k以上</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">补充说明（若有）</label>
+                    <textarea class="form-control" rows="3" name="addtional_remarks">{$info.addtional_remarks}</textarea>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleInputFile">公司Logo</label>
+                    <input type="file" id="exampleInputFile">   
+                </div> --><br>
+                
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <button type="button" class="btn btn-default" onclick="expJob_cancel()">取消</button>
+            </form>
+            
+            <div class="mr_empty_add" id="expJob_div" style="height:150px;">
+                    <ul class="list-group" style="color:#666666;text-align:left;">
+                    <li class="list-group-item" title="期望职位" style="line-height:20px;font-size:16px;margin:0 0 0 50px;display:inline" ><span class="glyphicon glyphicon-blackboard" aria-hidden="true" id="expected_position" style="color:#666666;">{$info.expected_position}</span><span class="glyphicon glyphicon-dashboard"aria-hidden="true" style="margin-left:40px;color:#666666;" id="position_type">{$info.position_type}</span></li>
+
+                    <li class="list-group-item" title="期望薪资" style="line-height:20px;font-size:16px;margin:0 0 0 50px;display:inline"><span class="glyphicon glyphicon-yen"aria-hidden="true" id="expected_salary" style="color:#666666;">{$info.expected_salary}</span></li>
+
+                    <li class="list-group-item" title="期望城市" style="line-height:20px;font-size:16px;margin:0 0 0 50px;display:inline">
+                    <span class="glyphicon glyphicon-map-marker"aria-hidden="true" id="expected_city" style="color:#666666;">{$info.expected_city}</span></li><br>
+
+                    <li  class="list-group-item" title="补充说明" style="line-height:20px;font-size:16px;position:relative;top:-40px;left:50px;display:inline">
+                    <span class="glyphicon glyphicon-send"aria-hidden="true" id="addtional_remarks" style="color:#666666;">&nbsp;{$info.addtional_remarks}</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--执行修改-->
+            <script type="text/javascript">
+                function expJob_edit(id){
+                    
+                $("#expJob_myform").css("display","block");
+                $("#expJob_div").css("display","none");
+                $.ajax({
+                    type:"POST",
+                    url:"__URL__/edit",
+                    data:"id="+id,
+                    dataType:"json",
+                    async:true,
+                    success:function(res){
+                        var data = res.data;
+                        $("input[name='expected_position']").val(data.expected_position);
+                        $("input[name='position_type']").val(data.position_type);
+                        $("input[name='addtional_remarks']").val(data.addtional_remarks);
+                        $("input[name='expected_salary']").val(data.expected_salary);
+                        $("input[name='expected_city']").val(data.expected_city);
+                }
+                });
+                    
+                }
+
+                function expJob_doEdit(){
+
+                    $.ajax({
+                        type:"POST",
+                        url:"__URL__/update",
+                        data:$("#expJob_myform").serialize(),
+                        dataType:"json",
+                        async:true,
+                        success:function(res){
+                            var info = res.data;
+                            if(res.info=="Y"){
+
+                                $("#expJob_myform").css("display","none");
+                                $("#expJob_div").css("display","block");
+                                $("#expected_position").html(info.expected_position);
+                                $("#position_type").html(info.position_type);
+                                $("#expected_salary").html(info.expected_salary);
+                                $("#expected_city").html(info.expected_city);
+                                $("#addtional_remarks").html(info.addtional_remarks);
+                                
+                            }
+
+                        }
+                    });
+                    return false;
+                }
+
+                function expJob_cancel(){
+                    $("#expJob_myform").css("display","none");
+                    $("#expJob_div").css("display","block");
+                    //清空form表单的值
+                    $(":input[type='text']","#expJob_myform").val('');
+                }
+        </script>
+    </div>
+
+    <!--项目经验-->
+            <div>
+                <div class="mr_moudle_head clearfixs mr_w604">
+                    <div class="mr_head_l">
+                        <div class="mr_title">
+                            <span class="mr_title_l">
+                            </span>
+                            <span class="mr_title_c" id="proj_exper">
+                                项目经验
+                            </span>
+                            <span class="mr_title_r">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mr_head_r" data-city="">
+                        <i>
+                        </i>
+                        <em><a  onclick="proj_exper_edit({$proj_exper_info.id})" 
+                        style="color:#00B38A;border:0px;background-color:#FCFCFC;">编辑</a>
+                        </em>
+                    </div>
+                </div>
+            <!--期望工作隐藏表单-->
+            <form style="display:none;" id="proj_exper_myform" method="post" onsubmit="return proj_exper_doEdit()">
+                <input type="hidden" name="id" value="{$proj_exper_info.id}">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">项目名称</label>
+                    <input type="text" class="form-control" placeholder="项目名称"name="proj_title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">你的职责</label>
+                    <input type="text" class="form-control" placeholder="你的职责"name="your_position">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">起止时间</label>
+                    <input type="text" class="form-control" placeholder="起止时间" name="proj_start_stop_time">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">项目描述</label>
+                    <textarea class="form-control" rows="3" name="proj_description">{$proj_exper_info.proj_description}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">项目链接</label>
+                    <input class="form-control" type="text" name="proj_links" placeholder="项目链接"/>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="exampleInputFile">公司Logo</label>
+                    <input type="file" id="exampleInputFile">   
+                </div> --><br>
+                
+                <input type="submit" class="btn btn-default" value="保存"/>
+                <button type="button" class="btn btn-default" onclick="proj_exper_cancel()">取消</button>
+            </form>
+            <div class="mr_empty_add" id="proj_exper_div" id="proj_exper_div" style="height:200px;display:none;">
+                    <ul style="color:#666666;text-align:left;">
+                    <li class="list-group-item" title="项目名称" style="line-height:20px;font-size:16px;margin:0 0 0 50px;display:inline" id="proj_title">项目名称：{$proj_exper_info.proj_title}</li>
+
+                    <li class="list-group-item" title="你的职责" style="line-height:20px;font-size:16px;margin:0 0 0 50px;display:inline" id="your_position">你的职责：{$proj_exper_info.your_position}</li><br>
+
+                    <li class="list-group-item" title="起止时间" style="line-height:20px;font-size:16px;position:relative;top:-60px;left:50px;display:inline" id="proj_start_stop_time">起止时间：{$proj_exper_info.proj_start_stop_time}</li>
+
+                    <li  class="list-group-item" title="项目描述" style="line-height:20px;font-size:16px;position:relative;top:-60px;left:70px;display:inline" id="proj_description">项目描述：{$proj_exper_info.proj_description}
+                    </li><br>
+
+                    <li  class="list-group-item" title="项目链接" style="line-height:20px;font-size:16px;position:relative;top:-120px;left:50px;display:inline" id="proj_links">项目链接：{$proj_exper_info.proj_links}
+                    </li>
+
+                </ul>
+            </div>
+
+            <!--执行修改-->
+            <script type="text/javascript">
+            <!--鼠标移入事件-->
+            $("#proj_exper").click(function(){
+                $("#proj_exper_div").css("display","block");
+            });
+                
+            function proj_exper_edit(id){
+                $("#proj_exper_myform").css("display","block");
+                $("#proj_exper_div").css("display","none");
+                $.ajax({
+                    type:"POST",
+                    url:"__URL__/proj_exper_edit",
+                    data:"id="+id,
+                    dataType:"json",
+                    async:true,
+                    success:function(res){
+                        var data = res.data;
+                        $("input[name='proj_title']").val(data.proj_title);
+                        $("input[name='your_position']").val(data.your_position);
+                        $("input[name='proj_start_stop_time']").val(data.proj_start_stop_time);
+                        $("input[name='proj_description']").val(data.proj_description);
+                        $("input[name='proj_links']").val(data.proj_links);
+                }
+                });
+                    
+                }
+
+                function proj_exper_doEdit(){
+
+                    $.ajax({
+                        type:"POST",
+                        url:"__URL__/proj_exper_update",
+                        data:$("#proj_exper_myform").serialize(),
+                        dataType:"json",
+                        async:true,
+                        success:function(res){
+                            var info = res.data;
+                            if(res.info=="Y"){
+                                $("#proj_exper_myform").css("display","none");
+                                $("#proj_exper_div").css("display","block");
+                                $("#proj_title").html(info.proj_title);
+                                $("#your_position").html(info.your_position);
+                                $("#proj_start_stop_time").html(info.proj_start_stop_time);
+                                $("#proj_description").html(info.proj_description);
+                                $("#proj_links").html(info.proj_links);
+                                
+                            }
+
+                        }
+                    });
+                    return false;
+                }
+
+                function proj_exper_cancel(){
+                    $("#proj_exper_myform").css("display","none");
+                    $("#proj_exper_div").css("display","block");
+                    //清空form表单的值
+                    $(":input[type='text']","#proj_exper_myform").val('');
+                }
+        </script>
+    </div>
+    </div>
+    </div>
+   
+    
+        <div class="mr_bottom clearfixs">
+        <div class="mr_bottom_l">
+            <div class="mr_down_tip dn">
+                <i>
+                </i>
+                <em>
+                </em>
+                <ul>
+                    <li class="active">
+                        <a href=""
+                        target="_blank">
+                            HTML
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                        target="_blank">
+                            DOC
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""
+                        target="_blank">
+                            PDF
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr_down">
+                <span>
+                    <i>
+                    </i>
+                    <a href="__URL__/download">
+                        把这份简历保存到本地
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="mr_bottom_r">
+            <span>
+                简历更新于
+            </span>
+            <span class="upResumeTime">
+                2017-02-28 16:09
+            </span>
+        </div>
+    </div>
+</div>           
+
+        <div class="mr_myresume_r">
+            <!-- @require "mycenter/modules/common/sidebar_mr/main.less" -->
+            <div class="mr_r_nav">
+                <ul class="clearfixs">
+                    <li>
+                        <a href="__MODULE__/PersonCenter/index" target="_blank" data-lg-tj-id="7e00"
+                        data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-gatj-msg="resume,投递箱,button">
+                            投递箱
+                            <i class="td">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" data-lg-tj-id="7f00"
+                        data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-gatj-msg="resume,邀请函,button">
+                            邀请函
+                            <i class="yq">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="__MODULE__/PersonCenter/collection" target="_blank" data-lg-tj-id="7g00"
+                        data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-gatj-msg="resume,收藏夹,button">
+                            收藏夹
+                            <i class="sc">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="mr_none">
+                        <a href="//www.lagou.com/s/subscribe.html" target="_blank" data-lg-tj-id="7h00"
+                        data-lg-tj-no="idnull" data-lg-tj-cid="idnull" data-lg-gatj-msg="resume,订阅栏,button">
+                            订阅栏
+                            <i class="dy">
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mr_upload" style="height:90px;">
+                
+				<if condition="($info.resume_name eq null)">
+				<i>
+                </i>
+                <a class="inline"  title="仅支持word文档" onclick="aa()">
+					我要上传附件简历
+                </a>
+				<else/>
+				<center><a href="#" style="position:relative;top:20px;">{$info.resume_name}</a></center>
+				</if>
+				<form method="post" enctype="multipart/form-data" action="__URL__/fj_upload">
+					<input type="hidden" name="id" value="{$info.id}">
+                    <input type="file" name="fj_resume" style="display:none;"/>
+					<input type="submit" value="上传" style="position:absolute;bottom:0px;"fixed>
+				</form>
+            </div>
+			<script type="text/javascript">
+					function aa(){
+						$("input[name='fj_resume']").click();
+					}
+			</script>
+            <div class="mr_uploaded clearfixs dn">
+                <a href="javascript:;" class="mr_del">
+                </a>
+                <div class="mr_up_main">
+                    <a href="//www.lagou.com/nearBy/downloadResume" title="">
+                    </a>
+                    <p>
+                    </p>
+                </div>
+                <div class="mr_set_default">
+                    <div class="set_default_wrap">
+                        <input id="default_resume" type="button" class="mr_button" value="默认投递：在线简历"
+                        />
+                        <span>
+                            <i class="mr_sj">
+                            </i>
+                        </span>
+                        <div class="xl_list dn">
+                            <ul class="ul_resume_type">
+                                <li data-type="1">
+                                    默认投递：在线简历
+                                </li>
+                                <li data-type="0">
+                                    默认投递：附件简历
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_fix">
+                <div class="mr_integrity">
+                    <div class="mr_top clearfixs">
+                        <span class="mr_tip_l">
+                            <em class="mr_tip">
+                                简历完整度：
+                            </em>
+                            <em class="mr_bfb">
+                                60%
+                            </em>
+                        </span>
+                        <a class="mr_tip_r" target="_blank" href="__URL__/preview">
+                            预览简历
+                        </a>
+                    </div>
+                    <div class="mr_integrity_m">
+                        <div class="mr_solid">
+                        </div>
+                        <div class="mr_dashed">
+                        </div>
+                    </div>
+                </div>
+                <div class="mr_module">
+                    <ul>
+                        <li class="active md_flag" data-md="baseinfo">
+                            <a class="clearfixs" href="#">
+                                <i class="mr_base_i">
+                                </i>
+                                <span class="mr_m_name">
+                                    基本信息
+                                </span>
+                            </a>
+                        </li>
+                        <li data-md="expectJob" class="md_flag">
+                            <a class="clearfixs">
+                                <i class="mr_hopework_i">
+                                </i>
+                                <span class="mr_m_name">
+                                    期望工作
+                                </span>
+                            </a>
+                        </li>
+
+                        <li data-md="projectExperience" class="md_flag">
+                            <a class="clearfixs">
+                                <i class="mr_works_i">
+                                </i>
+                                <span class="mr_m_name">
+                                    实习经历
+                                </span>
+
+                            </a>
+                        </li>
+                    
+                        <li data-md="worksShow" class="md_flag">
+                            <a class="clearfixs">
+                                
+                                <i class="mr_edu_i">
+                                </i>
+                                <span class="mr_m_name">
+                                    教育经历
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <!--li data-md="selfDescription" class="md_flag">
+                            <a class="clearfixs">
+                                <i class="mr_self_i">
+                                </i>
+                                <span class="mr_m_name">
+                                    自我描述
+                                </span>
+                            </a>
+                        </li-->   
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="box">
+        <div class="demo" style="margin:0 0 0 -50px;">
+            <a href="javascript:;" class="rollIn">                           
+                <i class="mr_works_i">
+                </i>
+                <span class="mr_m_name" style="background-color:#fff;">
+					添加项目经验
+                </span>
+            </a>
+        </div>
+
+        <div id="dialogBg"></div>
+        <div id="dialog" class="animated" style="width:600px;height:310px;">
+            <!--img class="dialogIco" width="100" height="100" src="__PUBLIC__/jq/images/ico.png" alt="" /-->
+            <div class="dialogTop">
+                <a href="javascript:;" class="claseDialogBtn">关闭</a>
+            </div>
+            <form action="__URL__/proj_exper_insert" method="post" id="editForm" >
+                <ul class="editInfos">
+                    <li><label><font color="#ff0000">* </font>项目名称：<input type="text" name="proj_title" required  class="ipt" style="height:40px;width:300px;"/></label></li>
+                    <li><label><font color="#ff0000">* </font>你的职责：<input type="text" name="your_position" required  class="ipt" style="height:40px;width:300px;"/></label></li>
+                    <li><label><font color="#ff0000">* </font>起止时间：<input type="text" name="proj_start_stop_time" required placeholder="请填写时间区间" class="ipt" style="height:40px;width:300px;"/></label></li>
+
+                    <li><label><font color="#ff0000">* </font>项目描述：<input type="text" name="proj_description" required  class="ipt" style="height:40px;width:300px;"/></label></li>
+
+                    <li><label><font color="#ff0000">* </font>项目链接：<input type="text" name="proj_links"  class="ipt" style="height:40px;width:300px;" placeholder="若有"/></label></li>
+                    <li><input type="submit" value="确认提交" class="submitBtn" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="重置" class="submitBtn" /></li>
+
+                </ul>
+            </form>
+        </div>
+    </div>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+
+    </div>
+    </div>
+</div>
+    <!-- 项目经验 -->
+    
+</block>

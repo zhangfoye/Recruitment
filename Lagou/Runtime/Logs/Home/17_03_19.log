@@ -1,0 +1,633 @@
+[ 2017-03-19T00:21:24+08:00 ] ::1 /lagouwang/Home/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `users` WHERE `username` = '18334793459' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-03-19T00:21:30+08:00 ] ::1 /lagouwang/Home/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `users` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2017-03-19T00:21:59+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-03-19T00:22:03+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+
+[ 2017-03-19T00:22:06+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [8] Undefined index: phonecode D:\wamp\www\lagouwang\Lagou\Home\Controller\PublicController.class.php 第 142 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-03-19T00:22:07+08:00 ] ::1 /lagouwang/Home/Public/getCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2017-03-19T00:22:22+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2017-03-19T00:22:32+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-03-19T00:22:32+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-03-19T00:22:32+08:00 ] ::1 /lagouwang/Home/Public/doRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0638s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `users` (`username`,`phone`,`password`,`addtime`) VALUES ('18334793459','18334793459','e10adc3949ba59abbe56e057f20f883e','1489854152') [ RunTime:0.0329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2017-03-19T00:24:54+08:00 ] ::1 /lagouwang/Home/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `users` WHERE `username` = '18334793459' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `resume` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `resume` WHERE ( uid=31 ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2017-03-19T00:26:14+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/uid/22
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:28:09+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/uid/22
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:31:06+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:31:16+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:31:21+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:31:33+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:32:34+08:00 ] ::1 /lagouwang/Home/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `users` WHERE `username` = '18334793459' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `resume` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `resume` WHERE ( uid=31 ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2017-03-19T00:34:40+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:36:19+08:00 ] ::1 /lagouwang/Home/PersonCenter/collect
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `position_info` [ RunTime:0.0177s ]
+SQL: SHOW COLUMNS FROM `collections` [ RunTime:0.0029s ]
+SQL: SELECT `comid` FROM `position_info` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT `id` FROM `position_info` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `collections` (`user_id`,`firm_id`,`post_id`,`collect_time`) VALUES ('31','68','19','1489854979') [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `position_info` SET `state`='1' WHERE ( id=19 ) [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-03-19T00:36:36+08:00 ] ::1 /lagouwang/Home/PersonCenter/delivery
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `resume` [ RunTime:0.0385s ]
+SQL: SELECT * FROM `resume` WHERE ( uid = 31 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `deliver_box` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `deliver` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `position_list` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `deliver_box` WHERE ( uid = 31 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `deliver_box` (`resume_type`,`firm_id`,`post_id`,`state`,`jobs`,`salary`,`firm_name`,`work_address`,`uid`) VALUES ('1','68','19','1','PHP程序员','3,5','三个臭皮匠','山西省太原市迎泽区','31') [ RunTime:0.0605s ]
+NOTIC: [8] Undefined variable: d D:\wamp\www\lagouwang\Lagou\Home\Controller\PersonCenterController.class.php 第 250 行.
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `position_list` (`com_id`,`post_id`,`resume_id`,`dbox_id`,`state`) VALUES ('68','19','22','51','1') [ RunTime:0.0087s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `deliver` (`face_address`,`time1`,`boxid`,`plistid`,`state`) VALUES ('山西省太原市迎泽区南内环长治路口','1489854996','51','42','1') [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2017-03-19T00:37:21+08:00 ] ::1 /lagouwang/Home/Comindex/index
+ERR: 无法加载控制器:Comindex
+
+[ 2017-03-19T00:38:04+08:00 ] ::1 /lagouwang/Home/Comindex/index
+ERR: 无法加载控制器:Comindex
+
+[ 2017-03-19T00:40:33+08:00 ] ::1 /lagouwang/Home/PersonCenter/position_detail/id/19
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `position_info` WHERE ( id= ) LIMIT 1  
+
+[ 2017-03-19T00:40:37+08:00 ] ::1 /lagouwang/Home/Comindex/index
+ERR: 无法加载控制器:Comindex
+
+[ 2017-03-19T00:41:04+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-03-19T00:41:08+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-03-19T00:41:54+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2017-03-19T00:42:52+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003657s ]
+
+[ 2017-03-19T00:42:53+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003050s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2017-03-19T00:42:56+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-03-19T00:44:29+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-03-19T00:44:31+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-03-19T00:44:34+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2017-03-19T00:44:37+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+
+[ 2017-03-19T00:44:38+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002187s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002145s ]
+
+[ 2017-03-19T00:45:06+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002096s ]
+
+[ 2017-03-19T00:45:34+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-03-19T00:45:34+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+
+[ 2017-03-19T00:45:58+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+
+[ 2017-03-19T00:45:59+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2017-03-19T00:46:07+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2017-03-19T00:46:33+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2017-03-19T00:46:34+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+
+[ 2017-03-19T00:47:01+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001391s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793489 ) LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2017-03-19T00:47:08+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+
+[ 2017-03-19T00:47:11+08:00 ] ::1 /lagouwang/Home/Public/getCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2017-03-19T00:48:17+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0224s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-03-19T00:48:20+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+
+[ 2017-03-19T00:48:20+08:00 ] ::1 /lagouwang/Home/Public/getCode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-03-19T00:48:26+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+
+[ 2017-03-19T00:48:35+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+
+[ 2017-03-19T00:48:53+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2017-03-19T00:49:02+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0393s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2017-03-19T00:49:02+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000662s ]
+
+[ 2017-03-19T00:49:02+08:00 ] ::1 /lagouwang/Home/Public/doRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `users` (`username`,`phone`,`password`,`addtime`) VALUES ('18334793459','18334793459','e5ad9faea70154d97c60fe3572bf58dc','1489855742') [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2017-03-19T00:49:14+08:00 ] ::1 /lagouwang/Home/Public/doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `users` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `resume` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `resume` WHERE ( uid=32 ) LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-03-19T00:50:03+08:00 ] ::1 /lagouwang/Home/Public/code1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+
+[ 2017-03-19T00:50:03+08:00 ] ::1 /lagouwang/Home/Public/com_doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `com_user` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-03-19T00:50:42+08:00 ] ::1 /lagouwang/Home/Public/code1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+
+[ 2017-03-19T00:50:42+08:00 ] ::1 /lagouwang/Home/Public/com_doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `com_user` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-03-19T00:50:55+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2017-03-19T00:50:57+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-03-19T00:51:03+08:00 ] ::1 /lagouwang/Home/Public/doverify
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+
+[ 2017-03-19T00:51:10+08:00 ] ::1 /lagouwang/Home/Public/existuser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `users` WHERE ( phone = 18334793459 ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2017-03-19T00:51:11+08:00 ] ::1 /lagouwang/Home/Public/phonecode
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] Undefined index: phonecode D:\wamp\www\lagouwang\Lagou\Home\Controller\PublicController.class.php 第 142 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2017-03-19T00:51:11+08:00 ] ::1 /lagouwang/Home/Public/doRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0198s ]
+NOTIC: [8] Undefined index: validate D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp\www\lagouwang\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `com_user` (`username`,`phone`,`password`,`addtime`) VALUES ('18334793459','18334793459','e5ad9faea70154d97c60fe3572bf58dc','1489855871') [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2017-03-19T00:51:25+08:00 ] ::1 /lagouwang/Home/Public/code1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+
+[ 2017-03-19T00:51:25+08:00 ] ::1 /lagouwang/Home/Public/com_doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `com_user` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2017-03-19T00:52:35+08:00 ] ::1 /lagouwang/Home/Public/code1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-03-19T00:52:35+08:00 ] ::1 /lagouwang/Home/Public/com_doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `com_user` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000736s ]
+
+[ 2017-03-19T00:53:35+08:00 ] ::1 /lagouwang/Home/Public/code1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+
+[ 2017-03-19T00:53:35+08:00 ] ::1 /lagouwang/Home/Public/com_doLogin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `com_user` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `com_user` WHERE `username` = '18334793459' AND `password` = 'e5ad9faea70154d97c60fe3572bf58dc' LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2017-03-19T00:58:26+08:00 ] ::1 /lagouwang/Home/ComIndex/index?uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+
+[ 2017-03-19T00:58:41+08:00 ] ::1 /lagouwang/Home/ComIndex/index?uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+
+[ 2017-03-19T00:58:49+08:00 ] ::1 /lagouwang/Home/ComIndex/index?uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+
+[ 2017-03-19T00:59:27+08:00 ] ::1 /lagouwang/Home/Position/displayul
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001467s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0484s ]
+SQL: SELECT * FROM `type` WHERE ( pid = 46 )  [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2017-03-19T00:59:28+08:00 ] ::1 /lagouwang/Home/Position/showli
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `type` WHERE ( pid =66 )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2017-03-19T01:00:20+08:00 ] ::1 /lagouwang/Home/ComIndex/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+
+[ 2017-03-19T01:00:30+08:00 ] ::1 /lagouwang/Home/ComIndex/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+
+[ 2017-03-19T01:03:01+08:00 ] ::1 /lagouwang/Home/ComIndex/index?uid=71
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `com_tag` WHERE ( id in () ) 
+

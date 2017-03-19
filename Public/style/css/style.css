@@ -179,7 +179,7 @@ ul.hot_pos i{width: 12px;height: 14px;position:absolute;background:url(img/hot.p
 .companyTags li{font-size:12px;float:left; padding:0 5px; background:#fff; border:1px solid #a9a9a9;color:#a9a9a9;margin:5px 15px 0 0; line-height:18px;}
 .btn{font-size:16px;color:#fff;background:#0d9572 url(img/arrow.png) 88px center no-repeat;padding:5px 40px 5px 15px;margin:10px 0 0 0;}
 .btn:hover{background-color:#00694e; color:#fff;}
-#backtop{display:none;background:url(img/backtop.png) left top no-repeat;width:28px;height:64px;position:fixed;bottom:80px;margin-left:1060px; cursor:pointer;}
+#backtop{display:none;background:url(img/backtop.png) left top no-repeat;width:28px;height:64px;position:fixed;bottom:70px;margin-left:550px; cursor:pointer;}
 #backtop:hover{background-position:right top !important;}
 #qrSide{ background:url(img/qr_index.jpg) no-repeat; width:108px; height:132px; position:fixed; right:0; bottom:160px; z-index:3;}
 #qrSide a{ background:#cfd0d2 url(img/x.png) no-repeat; position:absolute; right:0; top:-15px; width:15px; height:15px;}
@@ -1441,7 +1441,7 @@ ul.my_delivery{margin:20px 48px;}
 .recommend_list .hot_pos_r{width:310px;margin-left:0;}
 
 /*preview.html*/
-#previewWrapper{width:726px;border:12px solid #a3a3a3;margin:0 auto}
+#previewWrapper{width:726px;border:0px solid #a3a3a3;margin:0 auto}
 #previewWrapper .preview_header{height:26px;background:#019875;padding:9px 20px;color:#fff;overflow:hidden}
 #previewWrapper .preview_header h1{margin:0;font-size:18px;font-weight:600;line-height:26px;float:left}
 #previewWrapper .preview_header a{float:right;background:#006b52;color:#fff;padding:2px 12px}
@@ -1605,7 +1605,7 @@ ul.resumeLists li.fileResume .resumeIntro span{	margin-top:-30px;}
 .company_center_aside dd:hover,.company_center_aside dd.current{background-color:#f1f1f1}
 .company_center_aside dd.current a{color:#019875}
 .company_center_aside dd:hover span,.company_center_aside dd.current span{background-color:#91cebe}
-.company_center_content{background-color:#fafafa;margin-top:5px;position:relative}
+.company_center_content{background-color:#fafafa;margin-top:5px;position:relative;left:260px;width:800px;}
 .company_center_content>dt{height:47px;position:absolute;z-index:1;top:-5px;left:40px;background-color:#91cebe}
 .company_center_content>dt h1{color:#fff;font-size:24px;font-weight:normal;line-height:47px;padding:0 20px;margin:0}
 .company_center_content>dt em{background:url(img/title_arrow_new.png) no-repeat;width:4px;height:5px;position:absolute;left:-4px;top:0}

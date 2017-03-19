@@ -1,0 +1,57 @@
+<extend name="Base/base"/>
+<block name="main">
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            <i class="fa fa-calendar"></i>
+			类别信息管理
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="#">类别信息管理</a></li>
+            <li class="active">添加类别信息</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <!-- right column -->
+            <div class="col-md-12">
+              <!-- Horizontal Form -->
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title"><i class="fa fa-plus"></i> 添加类别信息</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form class="form-horizontal" action="__CONTROLLER__/insert/" method="GET" >
+                  <div class="box-body">
+					<input type="hidden" name="pid" value="{$pid}">
+					<input type="hidden" name="path" value="{$path}">
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">类别</label>
+                      <div class="col-sm-4">
+                        <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="type">
+                      </div>
+                    </div>
+                   
+                   
+					
+                  </div><!-- /.box-body -->
+                  <div class="box-footer">
+				    <div class="col-sm-offset-2 col-sm-1">
+						<button type="submit" class="btn btn-primary">添加</button>
+                    </div>
+					<div class="col-sm-1">
+						<button type="reset" class="btn btn-primary">重置</button>
+					</div>
+                  </div><!-- /.box-footer -->
+                </form>
+				<div class="row"><div class="col-sm-12">&nbsp;</div></div>
+              </div><!-- /.box -->
+       
+            </div><!--/.col (right) -->
+          </div>   <!-- /.row -->
+        </section><!-- /.content -->
+</block>   

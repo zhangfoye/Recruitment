@@ -1,2 +1,0 @@
-﻿文件下载网址  =>  文件保存路径
-https://passport.lagou.com/upload/oss.js  =>  E:\工具\www.lagou.com\js\oss_1.js

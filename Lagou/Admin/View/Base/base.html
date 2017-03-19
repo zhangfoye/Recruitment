@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>拉钩</title>
+    <!-- 告诉浏览器响应屏幕宽度 -->
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <!-- Bootstrap 3.3.4 -->
+    <link href="__PUBLIC__/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <!-- FontAwesome 4.3.0 -->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="__PUBLIC__/admin/bootstrap/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons 2.0.0 -->
+    <!--<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />-->   
+    <link href="__PUBLIC__/admin/bootstrap/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
+    <!-- Theme style -->
+    <link href="__PUBLIC__/admin/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+         folder instead of downloading all of them to reduce the load. -->
+    <link href="__PUBLIC__/admin/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+    <!-- iCheck -->
+    <link href="__PUBLIC__/admin/plugins/iCheck/flat/blue.css" rel="stylesheet" type="text/css" />
+    <!-- Morris chart -->
+    <link href="__PUBLIC__/admin/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="__PUBLIC__/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- Date Picker -->
+    <link href="__PUBLIC__/admin/plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker -->
+    <link href="__PUBLIC__/admin/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link href="__PUBLIC__/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="__PUBLIC__/Adminbootstrap/js/html5shiv.min.js"></script>
+        <script src="__PUBLIC__/Adminbootstrap/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+      
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+          <!-- 对于侧边栏迷你50x50像素迷你标志 -->
+          <span class="logo-mini"><b>R</b>UI</span>
+          <!-- 正常状态和移动设备标识 -->
+          <span class="logo-lg">网站后台管理</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">切换导航</span>
+          </a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">你有4条短信</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li><!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="__PUBLIC__/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                          </div>
+                          <h4>
+                            支持团队
+                            <small><i class="fa fa-clock-o"></i> 5分钟</small>
+                          </h4>
+                          <p>为什么不买一个新的令人敬畏的主题？</p>
+                        </a>
+                      </li><!-- end message -->
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="__PUBLIC__/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                            AdminLTE 设计团队
+                            <small><i class="fa fa-clock-o"></i> 2小时</small>
+                          </h4>
+                          <p>为什么不买一个新的令人敬畏的主题？</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="__PUBLIC__/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                            开发商
+                            <small><i class="fa fa-clock-o"></i> 今天</small>
+                          </h4>
+                          <p>为什么不买一个新的令人敬畏的主题？</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="__PUBLIC__/admin/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                            卖场部
+                            <small><i class="fa fa-clock-o"></i> 昨天</small>
+                          </h4>
+                          <p>为什么不买一个新的令人敬畏的主题？</p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div class="pull-left">
+                            <img src="__PUBLIC__/admin/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                          </div>
+                          <h4>
+                            审稿人
+                            <small><i class="fa fa-clock-o"></i>2天</small>
+                          </h4>
+                          <p>为什么不买一个新的令人敬畏的主题？</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">看到所有的消息</a></li>
+                </ul>
+              </li>
+              <!-- Notifications: style can be found in dropdown.less -->
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">你有10的通知</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5名新成员加入了今天
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> 很长的描述，可能不适合页面，可能导致设计问题
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5名新成员加入
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25的盐。
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> 你改变你的用户名
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">查看所有</a></li>
+                </ul>
+              </li>
+              <!-- Tasks: style can be found in dropdown.less -->
+              <li class="dropdown tasks-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">你有9个任务</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu">
+                      
+                      <li><!-- Task item -->
+                        <a href="#">
+                          <h3>
+                           让美丽的转变
+                            <small class="pull-right">80%</small>
+                          </h3>
+                          <div class="progress xs">
+                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">80% 完成</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li><!-- end task item -->
+                    </ul>
+                  </li>
+                  <li class="footer">
+                    <a href="#">查看所有任务</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="__PUBLIC__/admin/dist/img/{$Think.session.adminuser.picname}" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs">{$Think.session.adminuser.username}</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="__PUBLIC__/admin/dist/img/{$Think.session.adminuser.picname}" class="img-circle" alt="User Image" />
+                    <p>
+                     
+                      <small>注册于{$Think.session.adminuser.addtime|date="Y-m-d",###}</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#"></a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#"></a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#"></a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">简介</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="__MODULE__/Public/doLogout" class="btn btn-default btn-flat">退出</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+             
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="__PUBLIC__/Admin/dist/img/{$Think.session.adminuser.picname}" class="img-circle" alt="User Image" />
+            </div>
+            <div class="pull-left info">
+              <p>{$Think.session.adminuser.username}</p>
+
+              <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+            </div>
+          </div>
+          
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">主导航</li>
+            <li>
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>管理员管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="__MODULE__/manager/add"><i class="fa fa-circle-o"></i> 添加管理员</a></li>
+                <li><a href="__MODULE__/manager/index"><i class="fa fa-circle-o"></i>管理员列表</a></li>
+              </ul>
+            </li>
+             <li>
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>个人会员管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="__MODULE__/users/add"><i class="fa fa-circle-o"></i> 添加个人会员</a></li>
+                <li><a href="__MODULE__/users/index"><i class="fa fa-circle-o"></i>个人会员列表</a></li>
+              </ul>
+            </li>
+             <li>
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>公司会员管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li class="active"><a href="__MODULE__/comuser/add"><i class="fa fa-circle-o"></i> 添加公司会员</a></li>
+                <li><a href="__MODULE__/comuser/index"><i class="fa fa-circle-o"></i>公司会员列表</a></li>
+              </ul>
+            </li>
+            
+            
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-edit"></i> <span>标签管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="__MODULE__/Tags/index"><i class="fa fa-circle-o"></i> 浏览所有标签</a></li>
+              </ul>
+            </li>
+			 <li class="treeview">
+              <a href="#">
+                <i class="fa fa-folder"></i> <span>类别管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="__MODULE__/Type/index"><i class="fa fa-circle-o"></i> 浏览所有类别</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>轮播图管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="__MODULE__/Slides/add"><i class="fa fa-circle-o"></i>添加轮播图</a></li>
+                <li><a href="__MODULE__/Slides/index"><i class="fa fa-circle-o"></i>浏览轮播图</a></li>
+              </ul>
+            </li>
+			<li class="treeview">
+              <a href="#">
+                <i class="fa fa-book"></i> <span>友情链接管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="__MODULE__/Friendlink/add"><i class="fa fa-circle-o"></i>添加友情链接</a></li>
+                <li><a href="__MODULE__/Friendlink/index"><i class="fa fa-circle-o"></i>浏览友情链接</a></li>
+              </ul>
+            </li>
+			 <li class="treeview">
+              <a href="#">
+                <i class="fa fa-folder"></i> <span>公告管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="__MODULE__/Anno/add"><i class="fa fa-circle-o"></i>添加公告</a></li>
+                <li><a href="__MODULE__/Anno/index"><i class="fa fa-circle-o"></i>浏览公告</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        
+		<block name="main"></block>
+		
+		
+      </div><!-- /.content-wrapper -->
+	  
+	  <!-- 删除标签时弹出框 -->
+    <div id="xdl-alert" class="modal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> [Title]</h5>
+          </div>
+          <div class="modal-body small">
+            <p>[Message]</p>
+          </div>
+          <div class="modal-footer" >
+            <button type="button" class="btn btn-primary ok" data-dismiss="modal">[BtnOk]</button>
+            <button type="button" class="btn btn-default cancel" data-dismiss="modal">[BtnCancel]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>版本</b> 2.0
+        </div>
+        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed 工作室</a>.</strong> 保留所有权利.
+      </footer>
+      
+     
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+  
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="__PUBLIC__/admin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="__PUBLIC__/admin/bootstrap/js/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="__PUBLIC__/admin/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>    
+    <!-- Morris.js charts -->
+    <script src="__PUBLIC__/admin/bootstrap/js/raphael-min.js"></script>
+    <!-- Sparkline -->
+    <script src="__PUBLIC__/admin/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <!-- jvectormap -->
+    <script src="__PUBLIC__/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+    <script src="__PUBLIC__/admin/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="__PUBLIC__/admin/plugins/knob/jquery.knob.js" type="text/javascript"></script>
+    <!-- daterangepicker -->
+    <script src="__PUBLIC__/admin/bootstrap/js/moment.min.js" type="text/javascript"></script>
+    <script src="__PUBLIC__/admin/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <!-- datepicker -->
+    <script src="__PUBLIC__/admin/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="__PUBLIC__/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+    <!-- Slimscroll -->
+    <script src="__PUBLIC__/admin/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src='__PUBLIC__/admin/plugins/fastclick/fastclick.min.js'></script>
+    <!-- AdminLTE App -->
+    <script src="__PUBLIC__/admin/dist/js/app.min.js" type="text/javascript"></script>    
+    
+    <!-- AdminLTE 仪表板演示（这只是用于演示目的） -->
+    
+    <!-- AdminLTE 用于演示目的 -->
+    <script src="__PUBLIC__/admin/dist/js/demo.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+        $(function(){
+        
+          window.Modal = function (){
+            var reg = new RegExp("\\[([^\\[\\]]*?)\\]", 'igm');
+            var alr = $("#xdl-alert");
+            var ahtml = alr.html();
+
+            //关闭时恢复 modal html 原样，供下次调用时 replace 用
+            //var _init = function () {
+            //	alr.on("hidden.bs.modal", function (e) {
+            //		$(this).html(ahtml);
+            //	});
+            //}();
+
+            /* html 复原不在 _init() 里面做了，重复调用时会有问题，直接在 _alert/_confirm 里面做 */
+
+
+            var _alert = function (options) {
+              alr.html(ahtml);	// 复原
+              alr.find('.ok').removeClass('btn-success').addClass('btn-primary');
+              alr.find('.cancel').hide();
+              _dialog(options);
+
+              return{
+                on: function (callback){
+                  if(callback && callback instanceof Function) {
+                    alr.find('.ok').click(function () { callback(true) });
+                  }
+                }
+              };
+            };
+
+            var _confirm = function (options){
+              alr.html(ahtml); // 复原
+              alr.find('.ok').removeClass('btn-primary').addClass('btn-success');
+              alr.find('.cancel').show();
+              _dialog(options);
+
+              return {
+                on: function (callback) {
+                  if (callback && callback instanceof Function) {
+                    alr.find('.ok').click(function () { callback(true) });
+                    alr.find('.cancel').click(function () { callback(false) });
+                  }
+                }
+              };
+            };
+
+            var _dialog = function (options) {
+              var ops = {
+                msg: "提示内容",
+                title: "操作提示",
+                btnok: "确定",
+                btncl: "取消"
+              };
+
+              $.extend(ops, options);
+
+              console.log(alr);
+
+              var html = alr.html().replace(reg, function (node, key) {
+                return {
+                  Title: ops.title,
+                  Message: ops.msg,
+                  BtnOk: ops.btnok,
+                  BtnCancel: ops.btncl
+                }[key];
+              });
+              
+              alr.html(html);
+              alr.modal({
+                width: 500,
+                backdrop: 'static'
+              });
+            }
+
+            return {
+              alert: _alert,
+              confirm: _confirm
+            }
+
+          }();
+          
+          //测试
+          //Modal.alert({msg:'内容2',title:'标题2',btnok:'确定2',btncl:'取消2'});
+        });
+    </script>
+	<block name="myscript"></block>
+  </body>
+</html>

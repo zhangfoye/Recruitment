@@ -1,0 +1,221 @@
+<extend name="Base/base"/>
+<block name="main">
+	
+
+		<section class="content-header">
+          <h1>
+            信息输出表
+            <small>preview of simple tables</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="#">类别信息</a></li>
+            <li class="active">列表</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box">
+                <div class="box-header with-border">
+                  <h3 class="box-title"><i class="fa fa-th"></i> 类别信息管理</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                 <form action="__CONTROLLER__/index" method="get">
+                      <label class="col-sm-1">类别名</label>
+                      <div class="col-sm-2 ">
+                        <input type="text" name="name" class="form-control pull-left" >
+                      </div>
+                       <button type="submit" class="btn btn-primary pull-left ">搜索</button>
+                    </form>
+				
+					<table id="taglist" class="table table-bordered">
+						<thead>
+						<tr>
+						  <th style="width:60px">ID号</th>
+						  <th>类别名</th>
+						  <th>父类别</th>
+						  <th>类别路径</th>
+						  <th style="width:200px">添加时间</th>
+						  <th style="width: 200px">操作</th>
+						</tr>
+						</thead>
+                    <tbody>
+                    <foreach name="list" item="vo">
+                    <tr class="type{$vo.id}" align="center">
+                      <td>{$vo.id}</td>
+					  <td>{$vo.name}</td>
+                      <td>{$vo.pid}</td>
+                      <td>{$vo.path}</td>
+                      <td>{$vo.addtime|date="Y-m-d H:i:s",###}</td>
+                      <td><a onclick="doDel(this,{$vo.id})" class="btn btn-xs btn-danger">删除</a> 
+                      <a  class="btn  btn-xs btn-info"  href="__MODULE__/type/add/id/{$vo.id}/path/{$vo.path}" >添加子标签</a> 
+                      <a  onclick="edit(this,{$vo.id})" class="btn btn-xs btn-warning">修改名称</a> </td>
+                    </tr>
+                    </foreach>
+                    </tbody>
+                  </table>
+                </div><!-- /.box-body -->
+				<div class="box-footer clearfix">
+					<a class="btn btn-primary" href="__MODULE__/type/add">添加类别信息</a>
+					<center><nav aria-label="Page navigation">
+					</nav></center>
+				</div>
+				<div class="box-footer clearfix">
+          <p>共有<span style="color:blue;font-size:20px;">{$total}</span>条数据，当前为第<span style="color:blue;font-size:20px;">{$nowPage}</span>页</p>
+                  <ul class="pagination pagination-sm no-margin pull-right">
+                    {$pageinfo}
+                  </ul>
+                </div>
+              </div><!-- /.box -->
+
+              
+              
+            </div><!-- /.col -->
+            
+          </div><!-- /.row -->
+         
+        </section><!-- /.content -->
+				
+</block>
+
+<block name="myscript">
+    <div class="modal fade" id="editTagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="exampleModalLabel">修改标签</h4>
+          </div>
+          <div class="modal-body" >
+            <form id="editTagForm">
+              <div class="form-group">
+                <label for="recipient-name" class="control-label"> 标签名</label>
+                <input type="text" class="form-control" id="editname "name="editname" value="{$tag.name}">
+                <input type="hidden" name="editid" id="tagid">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="control-label">状态</label>
+              
+              </div>
+               <input type="reset" style="display:block;" /> 
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" onclick="doSave()">修改</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+    <script type="text/javascript">
+        //执行当前页的数据删除操作
+        function doDel(bt,id){
+            Modal.confirm({msg:'确定要删除当前标签吗？'}).on(function(e){
+                    if(e){
+                        //执行Ajax发送并执行删除操作
+						
+                        $.ajax({
+                            type:"GET",
+                            url: '__URL__/del',
+                            data:"id="+id,
+                            dataType:"json",
+                            success:function(res){
+				
+                                if(res==1){
+                                    //删除节点
+                                    $(bt).parents("tr").remove();
+                                }
+								if(res==2){
+									 Modal.confirm({msg:'请先删除子类'});
+								}
+								if(res==3){
+									Modal.confirm({msg:'删除失败'});
+								}
+                            }
+                        });
+                    }
+               })
+        }
+		
+		function taginfo(){
+			
+			
+			$("#id").val({$list.id});
+			$("#path").val({$list.path});
+		}
+        
+        //执行标签添加操作
+        function doAddTag(){
+            //执行Ajax发送并执行删除操作
+            $.ajax({
+                type: 'POST',
+                url : '__CONTROLLER__/insert',
+                data: $('#addTagForm').serialize(), //获取要添加form表单信息
+                dataType:"json",
+                success:function(res){
+                    if(res){
+                       var str = '<tr id=cc'+res.id+'><td>'+res.id+'</td>';
+                       str += '<td>'+res.name+'</td>';
+                       str += '<td>'+res.pid+'</td>';
+                       str += '<td>'+res.path+'</td>';
+                       str += '<td>'+res.addtime+'</td>';
+                       str += '<td><button onclick="doDel('+res.id+',this)" class="btn btn-xs btn-danger">删除</button>';
+						str += '<button onclick="taginfo()" class="btn  btn-xs btn-primary" data-toggle="modal" id="bbt" data-target="#addTagModal" data-id="{$vo.id}" data-path="{$vo.path}">添加子标签信息</button>';
+                       str += '<button onclick="doEdit()" class="btn btn-xs btn-primary">编辑</button></td></tr>';
+                       $("#taglist tbody").append(str);
+                    }else{
+                        Modal.alert({msg:'添加失败',title:'添加标签操作',btnok:'确定',btncl:'取消'});
+                    }
+                }
+            });
+            $('#addTagModal').modal('hide'); //关闭添加标签浮动窗口
+        }
+		
+		//执行修改
+		function doSave(){
+            $.ajax({
+                type:"post",
+                url:"__URL__/update",
+                data:$(editTagForm).serialize(),
+                datatype:"json",
+                success:function(res){
+                    $(".type"+res.id).children().eq(1).html(res.name);
+                   //alert(res.name);
+				  
+                   
+                   // $("."+'tag'+res).eq(2).val()
+                },
+				error:function(){
+					alert("dsd");
+				}
+            });
+             $('#editTagModal').modal('hide'); //关闭添加标签浮动窗口
+        }
+
+        function edit(obj,id)
+        {
+             $('#editTagModal').modal('show');
+            $.ajax({
+                type:"post",
+                url:"__URL__/edit",
+                data:"id="+id,
+                datatype:"json",
+                success:function(res){
+                  $("input[name=editname]").val(res.name);
+                  $("input[name=editid]").val(res.id);
+                }
+            });
+             $('#editTagModal').on('hide.bs.modal', function () {
+                $("#editTagForm")[0].reset();
+             });
+              
+        }
+		
+    </script>
+	
+</block>
